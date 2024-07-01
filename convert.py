@@ -23,6 +23,9 @@ def write_file(file_path, content):
 def convert_to_bae(py_code):
     return py_to_bae(py_code)
 
+def convert_to_py(bae_code):
+    return bae_to_py(bae_code)
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: convert.py [file.bae|file.py]")
